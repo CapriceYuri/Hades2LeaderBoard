@@ -92,7 +92,7 @@ export default function MainCard() {
                 <div className="flex-1">
                   <div className="flex flex-col items-center">
                     <Avatar
-                      variant="rounded"
+                      variant="circular"
                       color="indigo"
                       src={player.ava}
                       size="sm"

@@ -3,6 +3,7 @@ import NavigationBar from "./Components/NavHeader";
 import PageFooter from "./Components/Footer";
 import TotalRunsCard from "./Components/Cards/TotalRun";
 import TotalPlayerCard from "./Components/Cards/TotalPlayer";
+import LatestSubmission from "./Components/LatestSubmission";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <TotalPlayerCard />
         </div>
       </section>
+      <LatestSubmission />
       <MainCard />
       <PageFooter />
     </section>
