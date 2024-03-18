@@ -9,7 +9,7 @@ export default function TotalRunsCard() {
     >
       <img
         src="cardbg2.jpeg"
-        className="h-full w-full object-cover rounded-xl absolute"
+        className="h-full w-full object-cover object-top rounded-xl absolute"
       />
       <div className="absolute h-full w-full bg-[#28282b] opacity-80 rounded-xl" />
 

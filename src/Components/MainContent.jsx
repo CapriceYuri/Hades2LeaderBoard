@@ -62,7 +62,7 @@ export default function MainCard() {
     <section className="w-full flex justify-center py-10">
       <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white]">
         <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-90" />
-        <List className="z-40">
+        <List className="z-10">
           <div>
             <Typography
               variant="h2"
@@ -107,17 +107,21 @@ export default function MainCard() {
                   </div>
                 </div>
 
-                <div className="flex-1 text-center hidden md:block">
+                <div className="flex-1 text-center">
                   <div className="relative mx-auto">
                     <Avatar
                       src={`arms/${player.weapon}-${player.aspect}.png`}
                     />
-                    <Avatar
+                    {/* <Avatar
                       src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       withBorder={true}
                       color={useAvatarBorder(player.aspect)}
                       variant="rounded"
                       className="rotate-45 absolute top-0 start-50 transform -translate-x-full"
+                    /> */}
+                    <Avatar
+                      src={getAvatarRing(player.aspect)}
+                      className="absolute top-0 start-50 transform -translate-x-full"
                     />
                   </div>
                 </div>
@@ -139,7 +143,7 @@ export default function MainCard() {
                   </Typography>
                 </div>
 
-                <div className="flex-1">
+                {/* <div className="flex-1">
                   <div className="relative mx-auto text-center">
                     <Avatar
                       src={
@@ -155,7 +159,7 @@ export default function MainCard() {
                       className="absolute top-0 start-50 transform -translate-x-full"
                     />
                   </div>
-                </div>
+                </div> */}
 
                 {/* {addBoons(player.playerBoon, player.boonlevel)} */}
 
@@ -178,6 +182,22 @@ export default function MainCard() {
                     className="font-customFont"
                   >
                     {player.modded === true ? "M" : "U"}
+                  </Typography>
+                </div>
+                <div className=" mx-2 text-center hidden md:block">
+                  <Typography
+                    variant="small"
+                    color="white"
+                    className="font-semibold font-customFont"
+                  >
+                    {`v${player.version}`}
+                  </Typography>
+                  <Typography
+                    variant="small"
+                    color="white"
+                    className="font-customFont"
+                  >
+                    {player.platform}
                   </Typography>
                 </div>
                 <div className="flex-1 text-center hidden sm:block">
