@@ -4,7 +4,7 @@ import { totalRuns } from "../../Data/DataProcess";
 export default function TotalRunsCard() {
   return (
     <Card
-      className="w-[100%] h-56 bg-transparent border-4 border-black rounded-2xl relative"
+      className="w-[100%] h-56 bg-transparent border-4 border-black rounded-2xl relative max-w-[600px]"
       shadow={false}
     >
       <img

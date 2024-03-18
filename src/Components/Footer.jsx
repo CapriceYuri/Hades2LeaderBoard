@@ -22,7 +22,7 @@ export default function PageFooter() {
   return (
     <footer className="relative w-full bg-black">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="mx-auto grid w-full grid-cols-2 gap-8 py-8 md:grid-cols-2 text-center">
+        <div className="mx-auto grid w-full grid-cols-2 gap-8 py-4 md:grid-cols-2 text-center">
           {SITEMAP.map(({ title, links, src, icons }, key) => (
             <div key={key} className="w-full">
               <Typography

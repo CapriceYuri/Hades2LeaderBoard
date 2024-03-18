@@ -4,7 +4,7 @@ import { uniquePlayers } from "../../Data/DataProcess";
 export default function TotalPlayerCard() {
   return (
     <Card
-      className="w-[100%] h-56 flex bg-transparent border-4 border-black rounded-2xl relative"
+      className="w-[100%] h-56 flex bg-transparent border-4 border-black rounded-2xl relative max-w-[600px]"
       shadow={false}
     >
       <img

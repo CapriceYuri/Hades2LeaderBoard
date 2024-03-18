@@ -12,7 +12,7 @@ const recent5 = rawData.slice(0, 5);
 export default function LatestSubmission() {
   return (
     <Card
-      className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_40px_black] mx-auto my-5 relative"
+      className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_40px_black] mx-auto my-5 relative max-w-[1700px]"
       shadow={false}
     >
       <div className="absolute h-full w-full bg-[#28282b] -z-10 rounded-xl opacity-80" />
@@ -88,7 +88,7 @@ export default function LatestSubmission() {
                 {run.modded === true ? "M" : "U"}
               </Typography>
             </div>
-            <div className="flex-1 text-center hidden md:block">
+            <div className="text-center hidden md:block">
               <Typography
                 variant="small"
                 color="white"

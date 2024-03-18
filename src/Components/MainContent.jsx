@@ -60,7 +60,7 @@ export default function MainCard() {
 
   return (
     <section className="w-full flex justify-center py-10">
-      <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white]">
+      <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white] max-w-[1700px]">
         <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-90" />
         <List className="z-10">
           <div>
@@ -78,8 +78,8 @@ export default function MainCard() {
           <FindPlayerBtn onButtonClick={handleDataChange} /> */}
           {sortDisplay.map((player, index) => (
             <div key={index}>
-              <ListItem className="hover:bg-black focus:bg-black hover:rounded-2xl focus:rounded-2xl relative py-5 cursor-default">
-                <div className="absolute w-full h-full bg-white opacity-5 rounded-2xl top-0 left-0" />
+              <ListItem className="hover:bg-black focus:bg-black hover:rounded-md focus:rounded-xl relative py-5 cursor-default">
+                <div className="absolute w-full h-full bg-white opacity-5 rounded-md top-0 left-0" />
                 <div>
                   <Typography
                     variant="h6"
