@@ -60,7 +60,7 @@ export default function MainCard() {
 
   return (
     <section className="w-full flex justify-center py-10">
-      <Card className="w-[100%] bg-transparent 2xl:w-4/5 border-4 border-black rounded-2xl shadow-[0_0_30px_white]">
+      <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white]">
         <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-90" />
         <List className="z-40">
           <div>
@@ -208,7 +208,7 @@ export default function MainCard() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      color="yellow"
+                      color="lightgreen"
                       className="w-6 h-6 z-10 animate-bounce"
                     >
                       <path
