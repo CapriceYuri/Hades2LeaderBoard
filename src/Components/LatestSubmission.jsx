@@ -15,7 +15,7 @@ export default function LatestSubmission() {
       className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_40px_black] mx-auto my-5 relative max-w-[1700px]"
       shadow={false}
     >
-      <div className="absolute h-full w-full bg-[#28282b] -z-10 rounded-xl opacity-80" />
+      <div className="absolute h-full w-full bg-[#28282b] -z-10 rounded-xl opacity-95" />
       <List className="p-0">
         <div>
           <Typography
@@ -23,7 +23,7 @@ export default function LatestSubmission() {
             color="white"
             className="font-customFont text-center pt-5"
           >
-            Latest Submissions
+            Beta Submissions
           </Typography>
         </div>
         {recent5.map((run, index) => (

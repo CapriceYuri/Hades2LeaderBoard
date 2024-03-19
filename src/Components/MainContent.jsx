@@ -61,7 +61,7 @@ export default function MainCard() {
   return (
     <section className="w-full flex justify-center py-10">
       <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white] max-w-[1700px]">
-        <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-90" />
+        <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-95" />
         <List className="z-10">
           <div>
             <Typography
@@ -69,7 +69,7 @@ export default function MainCard() {
               color="white"
               className="p-2 text-center font-customFont"
             >
-              {"Heat Leaderboard"}
+              {"Beta Template"}
             </Typography>
           </div>
           <RunTypeBtn onButtonClick={handleDataChange} />
