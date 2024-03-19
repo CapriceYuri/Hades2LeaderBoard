@@ -82,6 +82,19 @@ export default function RecordSummary() {
                 />
               </div>
               <div className="flex-1 text-center">
+                <Avatar
+                  size="sm"
+                  src={run.pro === "he" ? `king.png` : `queen.png`}
+                />
+                <Typography
+                  variant="small"
+                  color="white"
+                  className="font-customFont"
+                >
+                  {run.pro === "he" ? `KING` : `QUEEN`}
+                </Typography>
+              </div>
+              <div className="flex-1 text-center">
                 <Typography
                   variant="h6"
                   color={

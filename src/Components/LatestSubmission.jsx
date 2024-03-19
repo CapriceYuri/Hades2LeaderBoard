@@ -7,7 +7,7 @@ import {
   Avatar,
 } from "@material-tailwind/react";
 import { rawData } from "../Data/DataProcess";
-const recent5 = rawData.slice(0, 5);
+const recent5 = rawData.slice(0, 10);
 
 export default function LatestSubmission() {
   return (
@@ -23,7 +23,7 @@ export default function LatestSubmission() {
             color="white"
             className="font-customFont text-center pt-5"
           >
-            Beta Submissions
+            Latest Submissions (10)
           </Typography>
         </div>
         {recent5.map((run, index) => (
@@ -69,6 +69,7 @@ export default function LatestSubmission() {
             </div>
             <div className="flex-1 text-center">
               <Avatar
+                size="md"
                 src={
                   run.heat === 64
                     ? `skull4.png`
@@ -76,7 +77,9 @@ export default function LatestSubmission() {
                     ? `skull3.png`
                     : run.heat >= 50
                     ? `skull2.png`
-                    : `skull1.png`
+                    : run.heat >= 40
+                    ? `skull1.png`
+                    : `skull.png`
                 }
               />
             </div>

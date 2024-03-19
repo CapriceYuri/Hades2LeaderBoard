@@ -13,6 +13,7 @@ export const FullData = [
     comment: "First",
     version: "1.445",
     platform: "Console",
+    pro: "he",
   },
   {
     ava: "hades.png",
@@ -28,6 +29,7 @@ export const FullData = [
     comment: "Record",
     version: "1.445",
     platform: "Mac",
+    pro: "he",
   },
   {
     ava: "hades.png",
@@ -43,13 +45,14 @@ export const FullData = [
     comment: "Collab",
     version: "1.314",
     platform: "Mac",
+    pro: "he",
   },
   {
     ava: "hades.png",
     modded: true,
     category: "Seeded",
     name: "Caprice",
-    heat: 59,
+    heat: 39,
     weapon: "Shield",
     aspect: "Zeus",
     special: "ath",
@@ -58,6 +61,7 @@ export const FullData = [
     comment: "Drag and Drop",
     version: "1.314",
     platform: "Mac",
+    pro: "she",
   },
   {
     ava: "hades.png",
@@ -88,6 +92,7 @@ export const FullData = [
     comment: "Testing Testing 123",
     version: "1.314",
     platform: "PC",
+    pro: "he",
   },
   {
     ava: "hades.png",
@@ -103,6 +108,7 @@ export const FullData = [
     comment: "Testing Testing 123",
     version: "1.314",
     platform: "Console",
+    pro: "she",
   },
   {
     ava: "hades.png",
@@ -118,5 +124,6 @@ export const FullData = [
     comment: "Testing Testing 123",
     version: "1.314",
     platform: "PC",
+    pro: "she",
   },
 ];
