@@ -25,7 +25,7 @@ export default function NavigationBar() {
         color="orange"
       >
         <a
-          href="https://hades2-leader-board.vercel.app/"
+          href="https://hades2-heat-run.vercel.app/"
           className="flex items-center hover:text-red-500"
         >
           Heat 2 Leaderboard
@@ -45,6 +45,14 @@ export default function NavigationBar() {
           className="flex items-center hover:text-red-500"
         >
           Sub-6 Leaderboard
+        </a>
+      </Typography>
+      <Typography as="li" variant="h6" className="p-1 font-customFont">
+        <a
+          href="https://hades-guide.vercel.app/"
+          className="flex items-center hover:text-red-500"
+        >
+          Resources
         </a>
       </Typography>
     </ul>
