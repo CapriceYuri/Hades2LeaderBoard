@@ -91,6 +91,13 @@ export default function RecordSummary() {
                 >
                   {run.name}
                 </Typography>
+                <Typography
+                  variant="small"
+                  color="white"
+                  className="font-customFont"
+                >
+                  "Nickname/Tag"
+                </Typography>
               </div>
               <div className="relative mx-auto flex-1 text-center">
                 <Avatar

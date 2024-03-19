@@ -28,7 +28,7 @@ export default function LatestSubmission() {
         </div>
         {recent5.map((run, index) => (
           <ListItem
-            className="text-center hover:bg-transparent focus:bg-[#28282B]"
+            className="text-center hover:bg-transparent focus:bg-[#28282B] cursor-default"
             key={index}
           >
             <div>
@@ -66,6 +66,19 @@ export default function LatestSubmission() {
               >
                 {run.weapon}
               </Typography>
+            </div>
+            <div className="flex-1 text-center">
+              <Avatar
+                src={
+                  run.heat === 64
+                    ? `skull4.png`
+                    : run.heat >= 60
+                    ? `skull3.png`
+                    : run.heat >= 50
+                    ? `skull2.png`
+                    : `skull1.png`
+                }
+              />
             </div>
             <div className="flex-1 text-center">
               <Typography
