@@ -5,6 +5,9 @@ import TotalRunsCard from "./Components/Cards/TotalRun";
 import TotalPlayerCard from "./Components/Cards/TotalPlayer";
 import LatestSubmission from "./Components/LatestSubmission";
 import RecordSummary from "./Components/SummaryContent";
+import { inject } from "@vercel/analytics";
+
+inject();
 
 function App() {
   return (
