@@ -18,15 +18,10 @@ export default function NavigationBar() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 items-center lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="h6"
-        className="p-1 font-customFont"
-        color="orange"
-      >
+      <Typography as="li" variant="h6" className="p-1 font-customFont">
         <a
           href="https://hades2-heat-run.vercel.app/"
-          className="flex items-center hover:text-red-500"
+          className="flex items-center hover:text-red-500 text-red-500"
         >
           Heat 2 Leaderboard
         </a>
