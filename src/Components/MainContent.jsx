@@ -12,6 +12,7 @@ import { useState } from "react";
 import { allData, BreakList, addRankProperty } from "../Data/DataProcess";
 import { getAvatarRing, useAvatarBorder } from "../ProcessLogic/FunctionLogic";
 import RunTypeBtn from "./Btns/RunTypes";
+import SectionCard from "./SectionCard";
 
 function haveComment(comment) {
   if (comment !== undefined) {
@@ -60,8 +61,7 @@ export default function MainCard() {
 
   return (
     <section className="w-full flex justify-center py-10">
-      <Card className="w-[100%] bg-transparent 2xl:w-5/6 border-4 border-black rounded-2xl shadow-[0_0_30px_white] max-w-[1700px]">
-        <div className="absolute h-full w-full bg-[#28282b] rounded-xl opacity-95" />
+      <SectionCard>
         <List className="z-10">
           <div>
             <Typography
@@ -255,7 +255,7 @@ export default function MainCard() {
             </div>
           </div>
         </CardFooter>
-      </Card>
+      </SectionCard>
     </section>
   );
 }
